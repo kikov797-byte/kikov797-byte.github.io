@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Organization</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; color: #222; background: #fff; }
+    nav {
+      background: #1a4f8a;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    header {
+      background: #1a4f8a;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.75rem; }
+    header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+    section {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    section h2 {
+      font-size: 1.6rem;
+      color: #1a4f8a;
+      margin-bottom: 1.25rem;
+    }
+    section p, section li { font-size: 1rem; line-height: 1.75; color: #333; }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .team-card {
+      background: #f0f5fb;
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .team-card .avatar {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: #1a4f8a;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.75rem;
+    }
+    .team-card h3 { font-size: 1rem; font-weight: 600; color: #1a4f8a; }
+    .team-card p { font-size: 0.85rem; color: #555; margin-top: 4px; }
+    .mission-box {
+      background: #f0f5fb;
+      border-left: 4px solid #1a4f8a;
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #222;
+    }
+    .coming-soon {
+      color: #888;
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+    footer {
+      background: #1a4f8a;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
 
+<header>
+  <h1>Educating Young Minds</h1>
+  <p>A non-profit helping 4th–6th graders explore the human body through fun, engaging activities.</p>
+</header>
+
+<nav>
+  <a href="#about">About us</a>
+  <a href="#mission">Mission</a>
+  <a href="#team">Our team</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#events">Events</a>
+</nav>
+
+<section id="about">
+  <h2>About us</h2>
+  <p>We are a non-profit founded in 2026. Our goal is to educate young minds about systems of the body through fun, engaging activities. We host 4-week camps directly at the student's school, primarily serving 4th–6th graders.</p>
+</section>
+
+<section id="mission">
+  <h2>Mission</h2>
+  <div class="mission-box">
+    Our mission is to not only educate youth about body systems, but to also guide them in exploring future career paths — emphasizing curiosity, learning, and growth.
+  </div>
+</section>
+
+<section id="team">
+  <h2>Our team</h2>
+  <p style="margin-bottom:1.25rem;">Our team currently has 4 members dedicated to making learning fun and meaningful.</p>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar">A</div>
+      <h3>Adhrith</h3>
+      <p>Co-founder</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">V</div>
+      <h3>Vihaan</h3>
+      <p>Co-founder</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">A</div>
+      <h3>Ashmi</h3>
+      <p>Head of Planning & Media</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">A</div>
+      <h3>Atharv</h3>
+      <p>Head of Curriculum Development</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <p class="coming-soon">Testimonials coming soon — check back after our first camp!</p>
+</section>
+
+<section id="events">
+  <h2>Events conducted</h2>
+  <p class="coming-soon">No events yet — our first camp is on the way. Stay tuned!</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Educating Young Minds. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
